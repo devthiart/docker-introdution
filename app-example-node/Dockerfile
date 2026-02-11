@@ -1,7 +1,6 @@
 FROM node:14
 WORKDIR /app-node
-# COPY . /app-node
+EXPOSE 3000
 COPY . .
 RUN npm install 
-# ENTRYPOINT npm start /app-node
 ENTRYPOINT npm start
